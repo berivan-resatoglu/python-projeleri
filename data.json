@@ -1,0 +1,20 @@
+[
+    {
+        "kitapadi": "sefiller",
+        "yazar": "victor hugo",
+        "fiyat": "200",
+        "yayin_yili": "1862",
+        "yayıncılık": "iş bankası",
+        "kategori": "tarihi roman",
+        "müsait": true
+    },
+    {
+        "kitapadi": "mutluluk",
+        "yazar": "zülfü livaneli",
+        "fiyat": "200",
+        "yayin_yili": "2002",
+        "yayıncılık": "2015",
+        "kategori": "edebi kurgu",
+        "müsait": true
+    }
+]
