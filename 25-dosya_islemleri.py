@@ -22,7 +22,12 @@ with open("data.json" , "w" , encoding="utf-8") as file:#dosyayı yazılır ve j
 
         }
      )
+     
      json.dump(data,file,indent=4, ensure_ascii=False)#dosyayı yazılır ve json formatına çevirir
+     
+
+     
+     
 
 
 
