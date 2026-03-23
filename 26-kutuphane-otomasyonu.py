@@ -21,8 +21,8 @@ while True:#sonsuz döngü
             yayıncılık=input("yayıncılıkını giriniz:")#yayıncılıkını giriniz
             kategori=input("kategoriyi giriniz:")#kategoriyi giriniz
             müsaitlik=bool(input("müsait mi? (e/h):"))#müsait mi?
-            data.append(
-                {
+            data.append({
+                
 
                 "kitapadi":kitapadi,#kitap adı
                 "yazar":yazar,#yazar
@@ -31,12 +31,13 @@ while True:#sonsuz döngü
                 "yayıncılık":yayıncılık,#yayıncılık
                 "kategori":kategori,#kategori
                 "müsait":müsaitlik,#müsait mi?
-                }
-            )
+                
+            })
             json.dump(data,file,indent=4, ensure_ascii=False)#dosyayı yazılır ve json formatına çevirir
 
 
     elif secim=="2":#seçim 2 ise kitap sil
+
         with open("data.json" , "w" , encoding="utf-8") as file:#dosyayı yazılır ve json formatına çevirir
             kitapadi=input("silinecek kitap adını giriniz:")#silinecek kitap adını giriniz
             for kitap in data:#kitap adını sil
@@ -47,10 +48,30 @@ while True:#sonsuz döngü
                     print("kitap bulunamadı")
             json.dump(data,file,indent=4, ensure_ascii=False)#dosyayı yazılır ve json formatına çevirir
 
+    elif secim=="3":
+        with open("data.json","w",encoding="utf-8") as file:
+            kitapadi=input("verilecek kitap adını giriniz:")
+
+        bulundu=False
+
+        for kitap in data:
+            if kitap["kitapadi"]==kitapadi:
+                kitap["müsait"]=True
+                bulundu=True
+                break
+
+        if not bulundu:
+            print("kitap bulunamadı")
+
+        json.dump(data,file,indent=4,ensure_ascii=False)
+
+
+
 
     elif secim=="4":#seçim 4 ise kitap sil
 
-        for kitap in data:
+        for kitap in data:#kitap adını listele  
+
             print("-"*50)
             print("kitap adı:",kitap["kitapadi"])
             print("yazar:",kitap["yazar"])
@@ -60,6 +81,10 @@ while True:#sonsuz döngü
             else:
                 print("müsaitlik:hayır")
             print("-"*50)
+
+    elif secim=="5":#seçim 5 ise çıkış
+        print("GÖRÜŞÜRÜZZZ KENDİNE CİCİ BAK 😘😘😘")
+        break
 
     
 
