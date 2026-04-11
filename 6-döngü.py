@@ -8,3 +8,4 @@ while sayi<120:
 
 for sayi in range(0,6):
     print(sayi, "hello world")
+

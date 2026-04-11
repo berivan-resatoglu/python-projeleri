@@ -23,14 +23,22 @@ kullanicilar=[
 ]
 
 
-while True:
+hak=3
 
-    kullanici=input("kullanıcı adınızı giriniz:")
+while True:
+    kullanici=input("Kullanıcı Adınızı Giriniz:")
+
     for user in kullanicilar:
         if user["username"]==kullanici:
-            password=input("lütfen şifrenizi tuşlayınız:")
-            hak=3
-            while
-            if user["şifre"]==password:
-                print(user["name"], "Hoşgeldin")
+            password=input("Lütfen Şifrenizi Tuşlayınız:")
+            while hak>0:
+                if user["sifre"]==password:
+                    print(user["name"]," Hoşgeldin")
+                else:
+                    hak=hak-1
+                    print(hak)
+
+            if hak==0:
+                print("hesabınız bloke edildi")
+                break
 

@@ -1,0 +1,11 @@
+[
+    {
+        "kitapadi": "python",
+        "yazar": "berivan",
+        "fiyat": 100,
+        "yayin_yili": 2020,
+        "yayıncılık": "yayıncılık",
+        "kategori": "kategori",
+        "müsait": true
+    }
+]

@@ -18,9 +18,12 @@ for a,b in tuple:
     print(b)#bu kodu yazdırır 2 4 6 8 10 yazdırır
 
 d={"k1":1,"k2":2,"k3":3}#d değişkeni k1:1,k2:2,k3:3 dictionarysinin her bir elemanını alır ve yazdırır
-for item in d:
-    print(item)#bu kodu yazdırır k1 k2 k3 yazdırır
-    
+for key,value in d:
+    print(key,value)#bu kodu yazdırır k1 1 k2 2 k3 3 yazdırır
+    for item in d.items():#d değişkeni k1:1,k2:2,k3:3 dictionarysinin her bir elemanını alır ve yazdırır
+        print(key,value)#bu kodu yazdırır k1 1 k2 2 k3 3 yazdırır
+        print(key)#bu kodu yazdırır k1 k2 k3 yazdırır
+        print(value)#bu kodu yazdırır 1 2 3 yazdırır
 
 
 

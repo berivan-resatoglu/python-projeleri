@@ -23,7 +23,7 @@ with open("bankamatik.json" , "r" , encoding="utf-8") as file: #bankamatik.json 
             
            
         if secim=="e":
-              new_mail=input("mail adresinşzi giriniz:")
+              new_mail=input("mail adresinizi giriniz:")
               new_password=input("sifrenizi giriniz:")
               hesap_var=False
               for user in data:

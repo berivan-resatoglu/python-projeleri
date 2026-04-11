@@ -1,22 +1,17 @@
 [
     {
-        "mail": "berivan@gmail.com",
-        "sifre": "123",
-        "bakiye": {
+        "mail":"berivan@gmail.com",
+        "sifre":"123",
+        "bakiye":{
             "TL": 1000,
-            "USD": 100,
-            "EUR": 0,
-            "GOLD": 2
+            "USD":100,
+            "EUR":0,
+            "GOLD":2
         }
-    },
-    {
-        "mail": "mizgin@gmail.com",
-        "sifre": "123",
-        "bakiye": {
-            "TL": 0,
-            "USD": 0,
-            "EUR": 0,
-            "GOLD": 0
-        }
+        
+
+
+        
+        
     }
 ]
