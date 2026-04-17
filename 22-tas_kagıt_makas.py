@@ -41,5 +41,6 @@ while kullanici_skor<3 and bilgisayar_skor<3:
 
 
 
+ 
 
-
+ 

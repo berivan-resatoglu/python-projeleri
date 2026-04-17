@@ -1,17 +1,42 @@
 [
     {
-        "mail":"berivan@gmail.com",
-        "sifre":"123",
-        "bakiye":{
+        "mail": "berivan@gmail.com",
+        "sifre": "123",
+        "bakiye": {
             "TL": 1000,
-            "USD":100,
-            "EUR":0,
-            "GOLD":2
+            "USD": 100,
+            "EUR": 0,
+            "GOLD": 2
         }
-        
-
-
-        
-        
+    },
+    {
+        "mail": "sezer@gmail.com",
+        "sifre": "12345",
+        "bakiye": {
+            "TL": 0,
+            "USD": 0,
+            "EUR": 0,
+            "GOLD": 0
+        }
+    },
+    {
+        "mail": "enes@gmail.com",
+        "sifre": "123456",
+        "bakiye": {
+            "TL": 0,
+            "USD": 0,
+            "EUR": 0,
+            "GOLD": 0
+        }
+    },
+    {
+        "mail": "enes@gmail.com",
+        "sifre": "123456",
+        "bakiye": {
+            "TL": 0,
+            "USD": 0,
+            "EUR": 0,
+            "GOLD": 0
+        }
     }
 ]

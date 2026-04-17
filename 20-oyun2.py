@@ -33,3 +33,4 @@ while True:
         ust = tahmin - 1
     else:
         print("Geçersiz giriş. Lütfen b, k veya d gir.")
+        

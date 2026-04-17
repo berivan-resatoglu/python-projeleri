@@ -48,22 +48,25 @@ while True:#sonsuz döngü
                     print("kitap bulunamadı")
             json.dump(data,file,indent=4, ensure_ascii=False)#dosyayı yazılır ve json formatına çevirir
 
-    elif secim=="3":
-        with open("data.json","w",encoding="utf-8") as file:
-            kitapadi=input("verilecek kitap adını giriniz:")
+    elif secim=="3": #seçim 3 ise kitap vermek
+        with open("data.json","w",encoding="utf-8") as file:#dosyayı yazılır ve json formatına çevirir
+            kitapadi=input("verilecek kitap adını giriniz:")#verilecek kitap adını giriniz
 
-        bulundu=False
 
-        for kitap in data:
-            if kitap["kitapadi"]==kitapadi:
-                kitap["müsait"]=True
-                bulundu=True
-                break
+        for kitap in data:#kitap adını ver
+            if kitap["kitapadi"]==kitapadi:#kitap adı eşleşiyorsa kitap ver
+                if kitap["müsait"]:
+                    kitap["müsait"]=False
+                    print("kitap verildi")
+                else:
+                    print("kitap müsait değil")
+                bulundu=True#bulundu değişkeni True'a eşitlenir
+                
 
-        if not bulundu:
+        if not bulundu:#bulundu değişkeni False ise kitap bulunamadı yazdırır
             print("kitap bulunamadı")
 
-        json.dump(data,file,indent=4,ensure_ascii=False)
+        json.dump(data,file,indent=4,ensure_ascii=False)#dosyayı yazılır ve json formatına çevirir
 
 
 
@@ -84,7 +87,8 @@ while True:#sonsuz döngü
 
     elif secim=="5":#seçim 5 ise çıkış
         print("GÖRÜŞÜRÜZZZ KENDİNE CİCİ BAK 😘😘😘")
-        break
+        break 
+     
 
     
 
